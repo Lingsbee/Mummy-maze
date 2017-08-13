@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.msi.mummymaze.StartActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="387dp"
+            android:src="@drawable/menuback" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:src="@drawable/menufront"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tutorial"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/close"
+                android:layout_toStartOf="@+id/close"
+                android:layout_weight="1"
+                android:background="@drawable/btnstartin"
+                android:gravity="left"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/start"
+                android:layout_alignBottom="@+id/start"
+                android:layout_alignLeft="@+id/setup"
+                android:layout_alignStart="@+id/setup"
+                android:layout_weight="1"
+                android:background="@drawable/btnclose"
+                android:gravity="left"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/tutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="67dp"
+                android:layout_weight="1"
+                android:background="@drawable/btntutorial"
+                android:gravity="left"
+                android:onClick="onClick"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/close"
+                android:layout_toStartOf="@+id/close" />
+
+            <Button
+                android:id="@+id/setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tutorial"
+                android:layout_alignBottom="@+id/tutorial"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnsetup"
+                android:gravity="left"
+                android:onClick="onClick" />
+
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

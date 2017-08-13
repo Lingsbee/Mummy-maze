@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MummyMaze</string>
+
+    <string name="dummy_button">Start Game</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

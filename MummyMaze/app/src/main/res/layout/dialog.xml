@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:weightSum="1"
+    style="R.style.edit_AlertDialog_style">
+    <ImageView
+        android:id="@+id/dialogpic"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:src="@drawable/dialogpic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="0.18" />
+</LinearLayout>
